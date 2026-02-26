@@ -71,10 +71,34 @@ A microbenchmark measures steady-state performance of the SPSC queue under Relea
 
 Configuration:
 
+# Performance
+
+### Benchmark Configuration
+
 - 1 producer thread
 - 1 consumer thread
-- Fixed iteration count
+- N = 10,000,000 operations
+- Capacity = 1024
+- Release build (`-O3 -DNDEBUG`)
+- Apple Silicon / Clang (C++20)
 
+### Results (Multiple Runs)
+
+| Run | Throughput (M ops/s) |
+|-----|----------------------|
+| 1   | 116.49               |
+| 2   | 138.29               |
+| 3   | 126.66               |
+| 4   | 154.39               |
+| 5   | 125.95               |
+| 6   | 99.87                |
+| 7   | 127.21               |
+
+**Average:** ~126.7 M ops/s  
+**Peak:** 154.4 M ops/s
+
+Checksum verified for all runs:
+50000005000000
 ---
 
 # Queue API
