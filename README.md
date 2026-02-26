@@ -67,12 +67,6 @@ The queue is implemented as a circular buffer (ring) with atomic head and tail i
 
 # Throughput Benchmark
 
-A microbenchmark measures steady-state performance of the SPSC queue under Release builds.
-
-Configuration:
-
-# Performance
-
 ### Benchmark Configuration
 
 - 1 producer thread
