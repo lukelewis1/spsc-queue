@@ -1,0 +1,2 @@
+add_executable(spsc_throughput throughput.cpp)
+target_link_libraries(spsc_throughput PRIVATE spsc_queue)

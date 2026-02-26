@@ -1,0 +1,19 @@
+# Build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Mac
+.DS_Store
+
+# Executables
+*.out
+*.exe
+
+# Debug symbols
+*.dSYM/
+
+# IDE
+.vscode/
+.idea/
